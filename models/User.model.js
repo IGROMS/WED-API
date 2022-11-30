@@ -33,11 +33,6 @@ const userSchema = new mongoose.Schema({
         default: "user",
         required: true,
     },
-    kids: {
-      type: Number,
-      min: 0,
-      max: 3
-    },
     weddings: {
       type: [mongoose.Schema.Types.ObjectId],
       required: true,
